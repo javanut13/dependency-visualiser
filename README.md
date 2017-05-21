@@ -2,7 +2,7 @@
 
 Usage:
 
-1. Get JAR from Will (Or install [Leiningen](https://leiningen.org/) and build it yourself: `lein uberjar`)
+1. Build a jar: `lein uberjar`
 2. Clone a repo to examine
 3. Run the analyser: `java -jar dependency-analyser.jar $REPO_PATH $FILE_EXT`
 
