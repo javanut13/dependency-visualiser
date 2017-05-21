@@ -47,7 +47,8 @@
 
 (defn -main
   "This is the main func"
-  [path & suffixes]
+  ([] (println "Arguments are <path to source folder> <extensions...>"))
+  ([path & suffixes]
   (let [data (get-data path suffixes)]
     (run-server (partial app data) {:port 8000}))
-    (println "Started server on port 8000"))
+    (println "Started server on port 8000")))
